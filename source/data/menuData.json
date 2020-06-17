@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "name": "Product",
+      "url": "product.html"
+    },
+    {
+      "name": "Blog",
+      "url": "#"
+    },
+    {
+      "name": "Contact",
+      "url": "#"
+    }
+  ]
+}

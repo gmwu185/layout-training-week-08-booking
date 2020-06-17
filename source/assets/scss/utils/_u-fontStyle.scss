@@ -1,0 +1,37 @@
+
+/*----------  字重  ----------*/
+.u-fontWeight {
+  &--Regular {
+    font-weight: 400;
+  }
+  &--Bold {
+    font-weight: 700;
+  }
+  &--ExtraBold {
+    font-weight: 800;
+  }
+}
+/*----------  /字重  ----------*/
+
+
+/*----------  自適應字級  ----------*/
+// 全域字級
+@include fontSizeBatch ();
+
+// 斷點 sm 字級
+@include media-breakpoint-up(sm) {
+  @include fontSizeBatch (sm);
+}
+// 斷點 md 字級
+@include media-breakpoint-up(md) {
+  @include fontSizeBatch (md);
+}
+// 斷點 lg 字級
+@include media-breakpoint-up(lg) {
+  @include fontSizeBatch (lg);
+}
+// 斷點 xl 字級
+@include media-breakpoint-up(xl) {
+  @include fontSizeBatch (xl);
+}
+/*----------  /自適應字級  ----------*/

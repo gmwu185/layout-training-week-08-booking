@@ -1,0 +1,8 @@
+{
+  "scss-scan.customPaths": [
+    // BS4 
+    "node_modules/bootstrap/scss/mixins/_breakpoints.scss"
+    // ,
+    // "source/assets/scss/helper/_colorsVar.scss"
+  ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+html(lang="zh-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title title 
+    link(rel="stylesheet", href="assets/css/all.css")
+  body.u-overflowX-hidden    
+    // block nav
+    block nav
+      // c-nav
+      .container-fluid.c-nav
+        .row
+          .container-xl
+            nav.c-navbar.px-xl-0.py-xl-3
+              a.material-icons.c-navbarLink.c-navbar__toggler.js-c-sidebarCollapse(href="#")
+                | dehaze
+              a.logo.c-navbar__logo.c-navbarLink(href="index.html")
+                | craftsman
+      // /c-nav
+    // /block nav
+
+    // block header
+    block header
+    // /block header
+
+    // main.container-fluid
+    main.container-fluid
+      .row
+        // block mainInner
+        block mainInner
+        // /block mainInner
+    // /main.container-fluid
+
+    // block footer
+    block footer
+    // /block footer
+
+    // block global-scripts
+    block globalScripts
+      script(src='assets/js/allVendors.js?#{new Date().getTime()}')
+      script(src='assets/js/all.js?#{new Date().getTime()}')
+    // /block global-scripts
