@@ -9,14 +9,30 @@ html(lang="zh-TW")
     // block nav
     block nav
       // c-nav
-      .container-fluid.c-nav
-        .row
-          .container-xl
-            nav.c-navbar.px-xl-0.py-xl-3
-              a.material-icons.c-navbarLink.c-navbar__toggler.js-c-sidebarCollapse(href="#")
-                | dehaze
-              a.logo.c-navbar__logo.c-navbarLink(href="index.html")
-                | craftsman
+      nav.navbar.navbar-expand-md.navbar-white.bg-white.py-2.px-4.py-md-4
+        .container-md
+          //- a.navbar-brand(href='#') Navbar
+          button.navbar-toggler.p-0(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.material-icons.align-middle dehaze
+          a.logo(href='index.html')
+            img(src="assets/img/ic-logo-aloha.svg", alt="")
+          a.nav-link.text-gray-dark.order-md-2.px-0.pl-md-12(href='#') Login
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.text-center.ml-auto
+              li.nav-item.dropdown
+                a#navbarDropdown.nav-link.text-black.d-md-flex.pr-md-0.pl-md-12(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  span.material-icons.align-middle
+                    | language
+                  span.material-icons.align-middle
+                    | arrow_drop_down
+                .dropdown-menu(aria-labelledby='navbarDropdown')
+                  a.dropdown-item(href='#') English (US)
+                  a.dropdown-item(href='#') 日本語
+                  a.dropdown-item(href='#') Italiano
+              li.nav-item
+                a.nav-link.text-gray-dark.pr-md-0.pl-md-12(href='#')
+                  | Sign up
+          
       // /c-nav
     // /block nav
 

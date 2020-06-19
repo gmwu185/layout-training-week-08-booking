@@ -61,7 +61,7 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-900 // $gray-800
   ),
   $colors
 );
@@ -88,6 +88,8 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     // 以下自定
+    "gray-dark":  $gray-900,
+    "black":      $black,
     "whiteTransparent": $whiteTransparent-9
   ),
   $theme-colors
