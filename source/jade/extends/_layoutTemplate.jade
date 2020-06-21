@@ -30,21 +30,47 @@ html(lang="zh-TW")
             h2.font-Raleway.text-center.u-fontWeight--Bold.u-fontWeight-md--ExtraBold.u-fontSize--6.u-fontSize-md--12.mb-4.mb-md-6
               | Subscribe for Exclusive Offer
             .row
-              .col-md-10.col-xl-6.input-group.mb-3.mx-auto
+              .col-md-10.col-xl-6.input-group.mx-auto.mb-3.mb-md-0
                 input.form-control(type='text', placeholder="Your email address", aria-label="Your email address", aria-describedby='footerInput')
                 .input-group-append
-                  button#footerInput.btn.btn-primary(type='button')
+                  button#footerInput.btn.btn-primary.text-uppercase.font-weight-bold.px-md-8(type='button')
                     | subscribe
-        section.row.bg-white.u-fontSize--3-5
-          .container.d-md-flex
-            ul.list-inline.mb-0
+        section.row.bg-white.u-fontSize--3-5.pt-2.pb-2
+          .container.d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.justify-content-lg-between
+            ul.list-inline.mb-0.order-md-1
+              li.list-inline-item.mr-6
+                a.d-inline-block.text-secondary.py-4(href="#") FAQs
+              li.list-inline-item.mr-6
+                a.d-inline-block.text-secondary.py-4(href="#") Terms of use
               li.list-inline-item
-                a(href="#") FAQs
+                a.d-inline-block.text-secondary.py-4(href="#") Privacy policy
+            p.mb-0.text-secondary.mb-4.mb-md-0.mr-md-auto.order-md-0.mr-lg-16
+              | © 2020 ALOHA, Inc. All rights reserved.
+            ul.list-inline.mb-0.d-none.d-lg-flex.order-lg-2.ml-lg-auto
+              li.list-inline-item.mr-6
+                a.text-secondary.d-lg-flex.align-items-lg-center.text-decoration-none(href="#", title="language", data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  span.text-black.material-icons.mr-2
+                    | language 
+                  span
+                    | English
+                  span.text-black.material-icons
+                    | arrow_drop_down
+                .dropdown-menu
+                  a.dropdown-item(href='#', title='繁體中文') 繁體中文
+                  a.dropdown-item(href='#', title='日本語') 日本語
+                  a.dropdown-item(href='#', title='Italiano') Italiano
               li.list-inline-item
-                a(href="#") Terms of use
-              li.list-inline-item
-                a(href="#") Privacy policy
-            p.mb-0 © 2020 ALOHA, Inc. All rights reserved.
+                a.text-secondary.d-lg-flex.align-items-lg-center.text-decoration-none(href="#", title="currency", data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 
+                  span.material-icons.mr-2
+                    | attach_money
+                  span
+                    | TWD
+                  span.material-icons
+                    | arrow_drop_down
+                .dropdown-menu
+                  a.dropdown-item(href='#', title='NT') NT
+                  a.dropdown-item(href='#', title='JPY') JPY
+                  a.dropdown-item(href='#', title='EUR') EUR
     // /block footer
 
     // block global-scripts
