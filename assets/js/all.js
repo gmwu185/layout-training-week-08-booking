@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#carouselControls").carousel("pause")});
