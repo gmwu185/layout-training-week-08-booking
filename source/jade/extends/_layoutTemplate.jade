@@ -8,32 +8,7 @@ html(lang="zh-TW")
   body.u-overflowX-hidden    
     // block nav
     block nav
-      // c-nav
-      nav.navbar.navbar-expand-md.navbar-white.bg-white.py-2.px-4.py-md-4
-        .container-md
-          //- a.navbar-brand(href='#') Navbar
-          button.navbar-toggler.p-0(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-            span.material-icons.align-middle dehaze
-          a.logo(href='index.html')
-            img(src="assets/img/ic-logo-aloha.svg", alt="")
-          a.nav-link.text-gray-dark.order-md-2.px-0.pl-md-12(href='#') Login
-          #navbarSupportedContent.collapse.navbar-collapse
-            ul.navbar-nav.text-center.ml-auto
-              li.nav-item.dropdown
-                a#navbarDropdown.nav-link.text-black.d-md-flex.pr-md-0.pl-md-12(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  span.material-icons.align-middle
-                    | language
-                  span.material-icons.align-middle
-                    | arrow_drop_down
-                .dropdown-menu(aria-labelledby='navbarDropdown')
-                  a.dropdown-item(href='#') English (US)
-                  a.dropdown-item(href='#') 日本語
-                  a.dropdown-item(href='#') Italiano
-              li.nav-item
-                a.nav-link.text-gray-dark.pr-md-0.pl-md-12(href='#')
-                  | Sign up
-          
-      // /c-nav
+      include ./../components/_c-nav.jade
     // /block nav
 
     // block header
@@ -42,14 +17,34 @@ html(lang="zh-TW")
 
     // main.container-fluid
     main.container-fluid
-      .row
-        // block mainInner
-        block mainInner
-        // /block mainInner
+      // block mainInner
+      block mainInner
+      // /block mainInner
     // /main.container-fluid
 
     // block footer
     block footer
+      footer.container-fluid.c-footer
+        section.row.bg-light.py-6.py-md-23
+          .container
+            h2.font-Raleway.text-center.u-fontWeight--Bold.u-fontWeight-md--ExtraBold.u-fontSize--6.u-fontSize-md--12.mb-4.mb-md-6
+              | Subscribe for Exclusive Offer
+            .row
+              .col-md-10.col-xl-6.input-group.mb-3.mx-auto
+                input.form-control(type='text', placeholder="Your email address", aria-label="Your email address", aria-describedby='footerInput')
+                .input-group-append
+                  button#footerInput.btn.btn-primary(type='button')
+                    | subscribe
+        section.row.bg-white.u-fontSize--3-5
+          .container.d-md-flex
+            ul.list-inline.mb-0
+              li.list-inline-item
+                a(href="#") FAQs
+              li.list-inline-item
+                a(href="#") Terms of use
+              li.list-inline-item
+                a(href="#") Privacy policy
+            p.mb-0 © 2020 ALOHA, Inc. All rights reserved.
     // /block footer
 
     // block global-scripts

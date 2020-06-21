@@ -1,11 +1,35 @@
 extends extends/_layoutTemplate.jade
 
 //- block nav
-//-   - var path = 'index.html'
-//-   include ./components/nav/_c-nav.jade
-//-   include ./components/nav/_c-sidebar.jade
+  //- - var path = 'index.html'
+  //- include ./components/_c-nav.jade
 
-//- block header
+block header
+  header#carouselControls.carousel.slide.c-carousel.mt-14.mt-md-18(data-ride='carousel')
+    .container.h-100
+      .row.h-100.h-100
+        .col-12.col-xl-10.h-100.mx-xl-auto
+          .position-relative.h-100
+            a.carousel-control-prev(href='#carouselControls', role='button', data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='#carouselControls', role='button', data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.sr-only Next
+    ul.carousel-inner.list-unstyled.c-carousel__list.font-Raleway
+      li.carousel-item.c-carousel__list__item.active
+        .c-carouselBgImg.c-carouselBgImg--one
+          h1.h2.text-center.text-white.c-carousel__list__itemTitle.u-fontSize-md--12
+            | Discover your ideal hotel
+      li.carousel-item.c-carousel__list__item
+        .c-carouselBgImg.c-carouselBgImg--two
+          h2.h2.text-center.text-white.c-carousel__list__itemTitle.u-fontSize-md--12
+            | Affordable 4 star hotels
+      li.carousel-item.c-carousel__list__item
+        .c-carouselBgImg.c-carouselBgImg--three
+          h2.h2.text-center.text-white.c-carousel__list__itemTitle.u-fontSize-md--12
+            | Carefully selected luxurious hotels
+
 //-   // header.container-fluid
 //-   header.container-fluid
 //-     section.row

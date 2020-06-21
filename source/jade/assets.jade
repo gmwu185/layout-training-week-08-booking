@@ -1,14 +1,13 @@
+extends extends/_layoutTemplate.jade
 
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-    link(rel="stylesheet", href="assets/css/all.css")
-  body
-    h1.text-center assets
-    .container
+//- block nav
+//- - var path = 'assets.html'
+//- include ./components/_c-nav.jade
+
+block mainInner
+  section.row
+    article.container
+      h1.text-center assets
       h2 grid system
       .row
         .col-md-1
@@ -184,7 +183,6 @@ html(lang="en")
             | a.text-white
 
       hr
-    .container
       h2 icons (使用到的 Icon)
       a(href="https://material.io/resources/icons", target="new") 資料來源 material.io icons
       .row
@@ -272,6 +270,7 @@ html(lang="en")
             | .font-OpenSans.u-fontWeight--Bold - Bold (w700)
           p.font-OpenSans.u-fontWeight--ExtraBold.mb-0
             | .font-OpenSans.u-fontWeight--ExtraBold - ExtraBold (w800)
+      
       hr
       h2 自適應字級 
         small (配合斷點每單位 4 級)

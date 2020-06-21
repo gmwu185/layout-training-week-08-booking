@@ -1,0 +1,25 @@
+//- if (path === 'index.html')
+// c-nav
+nav.navbar.navbar-expand-md.navbar-white.fixed-top.bg-white.py-2.px-4.py-md-4
+  .container-md
+    button.navbar-toggler.p-0(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.material-icons.align-middle dehaze
+    a.logo(href='index.html', title='go to aloha index')
+      img(src="assets/img/ic-logo-aloha.svg", alt="aloha logo")
+    a.nav-link.text-gray-dark.order-md-2.px-0.pl-md-12(href='#', title='login') Login
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.text-center.ml-auto
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.text-black.d-md-flex.pr-md-0.pl-md-12(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', title='select language')
+            span.material-icons.align-middle
+              | language
+            span.material-icons.align-middle
+              | arrow_drop_down
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='#', title='English (US)') English (US)
+            a.dropdown-item(href='#', title='日本語') 日本語
+            a.dropdown-item(href='#', title='Italiano') Italiano
+        li.nav-item
+          a.nav-link.text-gray-dark.pr-md-0.pl-md-12(href='#', title='sign up')
+            | Sign up
+// /c-nav
